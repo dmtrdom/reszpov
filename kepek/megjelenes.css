@@ -1,0 +1,58 @@
+header{
+    background-image: url('dandelion.jpg');
+    grid-area: h;
+}
+footer{
+    background-image: url('dandy.gif');
+    grid-area: f;
+}
+nav{
+    background-image: url('dand2.jpg');
+
+    grid-area: n;
+}
+a{
+    text-decoration: none;
+    text-align: left;
+    float: left;
+}
+aside{
+    background-image: url('dand3.jpg');
+    grid-area: as;
+}
+article{
+    background-image: url('dandy2.gif');
+    grid-area: ar;
+}
+div *{
+    height: 200px;
+    background-repeat:no-repeat ;
+    text-align: right;
+    color: white;
+    background-size: cover ;
+    border-radius: 5%;
+    padding: 10px;
+}
+#fotartalom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: 
+    'h n n'
+    'as f ar '
+    ;
+}
+#menu{
+    background-color: rgba(111, 0, 255, 0.342);
+    height: 35px;
+}
+a:hover{
+    font-weight: bold;
+}
+@media only screen and (max-widht: 600px) 
+{
+    #fotartalom{
+        display: block;
+    }
+}
